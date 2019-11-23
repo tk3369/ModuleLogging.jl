@@ -1,6 +1,6 @@
-using ModuleLogger
+using ModuleLogging
 using Test
 
-@testset "ModuleLogger.jl" begin
-    # Write your own tests here.
+@testset "ModuleLogging.jl" begin
+    @info "TBD"
 end

@@ -24,7 +24,6 @@ ModuleLogger(logger::T, modules::Module...) where T <: AbstractLogger =
 # Should log only if the module is being monitored
 
 shouldlog(logger::ModuleLogger, level, _module, group, id) = begin
-    @show _module
     _module ∈ logger.modules &&
         shouldlog(logger.logger, level, _module, group, id)
 end

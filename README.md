@@ -32,8 +32,10 @@ using Logging, ModuleLogging
 using .Foo
 using .Bar
 
-logger = ModuleLogger(stderr, Logging.Debug, @__MODULE__, Foo)
+# Turn on debug logging for Foo module only
+logger = ModuleLogger(stderr, Logging.Debug, Foo)
 global_logger(logger)
-Foo.foo()
-Bar.bar()
+
+Foo.foo()    # debug log is displayed
+Bar.bar()    # no debug log
 ```

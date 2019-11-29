@@ -7,13 +7,13 @@ but not any other third-party modules.
 
 For convenience, two constructor functions are provided. 
 The first one creates an underlying `SimpleLogger`. 
-```
+```julia
 ModuleLogger(stream::IO, level::Logging.LogLevel, modules::Module...)
 ModuleLogger(logger::AbstractLogger, modules::Module...)
 ```
 
 Example:
-```
+```julia
 module Foo
     function foo()
         @debug "foo called"

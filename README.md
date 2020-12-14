@@ -1,5 +1,7 @@
 # ModuleLogging.jl
 
+[![Build Status](https://github.com/tk3369/ModuleLogging.jl/workflows/CI/badge.svg)](https://github.com/tk3369/ModuleLogging.jl/actions?query=workflow%3ACI)
+
 This package allows selective logging by module.
 
 One use case is to turn on debug logging only for your own modules 
